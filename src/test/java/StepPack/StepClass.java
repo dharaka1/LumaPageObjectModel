@@ -147,7 +147,8 @@ public class StepClass extends BaseClass {
 			System.out.println("Its not Working");
 		}
 
-		driver.navigate().back();
+  NavigateBack();
+
 	}
 
 	@Then("Remove from Cart")
