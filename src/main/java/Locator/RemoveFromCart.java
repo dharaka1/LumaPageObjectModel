@@ -16,7 +16,7 @@ public class RemoveFromCart extends BaseClass {
 	public static By Mycart = By.xpath("//a[@class=\"action showcart\"]");
 
 	public void Mycart() throws InterruptedException {
-		implicityWait();
+		implicitWait();
 		driver.findElement(Mycart).click();
 	}
 
@@ -29,7 +29,7 @@ public class RemoveFromCart extends BaseClass {
 	public static By ClickOK = By.xpath("//span[text()='OK']");
 
 	public void ClickOK() throws InterruptedException {
-		implicityWait();
+		implicitWait();
 		driver.findElement(ClickOK).click();
 	}
 

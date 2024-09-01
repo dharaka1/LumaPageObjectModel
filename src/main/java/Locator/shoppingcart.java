@@ -9,7 +9,7 @@ public class shoppingcart extends BaseClass {
 	public By Edite = By.xpath("//a[@class=\"action edit\"]");
 	public By update = By.xpath("//button[@id=\"product-updatecart-button\"]");
 	public void ShoppingCart() throws InterruptedException {
-		implicityWait();
+		implicitWait();
 		driver.findElement(ShoppingCart).click();
 		
 	}

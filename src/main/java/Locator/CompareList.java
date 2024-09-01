@@ -14,7 +14,7 @@ public class CompareList extends BaseClass  {
 	public By ScrollComapareProducts = By.xpath("//a[@title=\"Push It Messenger Bag\"]");
 	public By AddToCart = By.xpath("//span[text()='Add to Cart']");
 	public void ComparetoList() throws InterruptedException {
-		implicityWait();
+		implicitWait();
 		driver.findElement(ComparetoList).click();		
 	}
 	public void ComparetowidList() {
@@ -32,7 +32,7 @@ public class CompareList extends BaseClass  {
 		scroll(element2);
 	}
 	public void AddToCart() throws InterruptedException {
-		implicityWait();
+		implicitWait();
 		driver.findElement(AddToCart).click();
 		
 	}

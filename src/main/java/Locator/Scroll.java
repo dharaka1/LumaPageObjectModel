@@ -11,7 +11,7 @@ public class Scroll  extends BaseClass{
 		public By Scroll = By.xpath(" //a[@title=\"Push It Messenger Bag\"]");
 
 		public void Scroll() throws InterruptedException {
-			implicityWait();
+			implicitWait();
 
 			WebElement element1 = driver.findElement(Scroll);
 

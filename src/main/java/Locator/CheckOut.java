@@ -12,7 +12,7 @@ public class CheckOut extends BaseClass {
 
 	public void Scroll5() throws InterruptedException {
 
-		implicityWait();
+		implicitWait();
 
 		WebElement element3 = driver.findElement(Scroll5);
 
