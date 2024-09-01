@@ -46,12 +46,15 @@ public class StepClass extends BaseClass {
 
 			driver = new EdgeDriver();
 
-	
+		} else if (Browser.equalsIgnoreCase("Firefox")) {
+
+			driver = new FirefoxDriver();
+
 		} else {
 			System.out.println("No browsers were found");
 		}
 
-		maximize();
+		maximize(Browser);
 	}
 
 	@When("Launch The Url")
@@ -144,8 +147,8 @@ public class StepClass extends BaseClass {
 			System.out.println("Its not Working");
 		}
 
-		NavigateBack();
-		}
+		driver.navigate().back();
+	}
 
 	@Then("Remove from Cart")
 	public void remove_from_cart() throws InterruptedException {
@@ -153,10 +156,7 @@ public class StepClass extends BaseClass {
 		rm.Mycart();
 		rm.RemoveFromMycart();
 		rm.ClickOK();
+		driver.quit();
+	}
 
-	
-	quit();
-
-}
-	
 }

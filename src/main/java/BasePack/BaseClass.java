@@ -19,13 +19,7 @@ import org.openqa.selenium.devtools.idealized.Javascript;
 public class BaseClass {
 
 	public static WebDriver driver;
-
-	public static void LaunchBrowser() {
-
-		driver = new ChromeDriver();
-
-	}
-
+	
 	public static void maximize() {
 		driver.manage().window().maximize();
 	}
