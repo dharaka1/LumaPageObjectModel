@@ -147,8 +147,7 @@ public class StepClass extends BaseClass {
 			System.out.println("Its not Working");
 		}
 
-  NavigateBack();
-
+		NavigateBack();
 	}
 
 	@Then("Remove from Cart")
